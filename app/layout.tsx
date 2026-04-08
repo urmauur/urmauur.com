@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/providers/theme-provider";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -69,6 +70,11 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
+        <Script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="54bacee6-2e6a-4acb-b797-548942d8902c"
+        />
       </body>
     </html>
   );
