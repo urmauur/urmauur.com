@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFileSync } from "fs";
 import { join } from "path";
 
-export const alt = "Faisal Amir — Frontend & UI Engineer";
+export const alt = "Faisal Amir — Frontend & UI Engineer from Indonesia";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -24,6 +24,35 @@ export default async function Image() {
       }}
     >
       <img src={base64} width={80} height={80} />
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 6,
+          background: "#18181b",
+          border: "1px solid #27272a",
+          borderRadius: 999,
+          padding: "6px 16px",
+        }}
+      >
+        <div
+          style={{
+            width: 8,
+            height: 8,
+            borderRadius: "50%",
+            background: "#22c55e",
+          }}
+        />
+        <span
+          style={{
+            color: "#a1a1aa",
+            fontSize: 16,
+            fontFamily: "sans-serif",
+          }}
+        >
+          Available for opportunities
+        </span>
+      </div>
       <div
         style={{
           display: "flex",
@@ -57,7 +86,7 @@ export default async function Image() {
       </div>
       <p
         style={{
-          color: "#3f3f46",
+          color: "#71717a",
           fontSize: 18,
           margin: 0,
           fontFamily: "sans-serif",

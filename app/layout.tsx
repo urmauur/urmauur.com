@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://urmauur.com"),
   title: {
     template: "%s - Faisal Amir",
-    default: "Faisal Amir — Frontend & UI Engineer",
+    default: "Faisal Amir — Frontend & UI Engineer from Indonesia",
   },
   description:
     "Frontend and UI Engineer from Indonesia. I craft production-ready UIs with tidy details and micro interactions.",
@@ -35,14 +35,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://urmauur.com",
-    title: "Faisal Amir — Frontend & UI Engineer",
+    title: "Faisal Amir — Frontend & UI Engineer from Indonesia",
     description:
       "Frontend and UI Engineer from Indonesia. I craft production-ready UIs with tidy details and micro interactions.",
     siteName: "Faisal Amir",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Faisal Amir — Frontend & UI Engineer",
+    title: "Faisal Amir — Frontend & UI Engineer from Indonesia",
     description:
       "Frontend and UI Engineer from Indonesia. I craft production-ready UIs with tidy details and micro interactions.",
     creator: "@urmauur",
