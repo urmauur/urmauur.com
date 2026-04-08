@@ -24,13 +24,13 @@ const jsonLd = {
 
 export default function Home() {
   return (
-    <div className="bg-background text-foreground min-h-screen">
+    <div className="bg-background text-foreground flex min-h-screen items-center py-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <ThemeToggle />
-      <div className="mx-auto max-w-3xl px-6 py-16 md:px-8 md:py-16">
+      <div className="mx-auto max-w-3xl px-6 md:px-8">
         {/* Header */}
         <header className="mb-8">
           <h1 className="mb-1 text-xl font-normal">
