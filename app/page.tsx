@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import profileData from "@/data/profile.json";
 import { ThemeToggle } from "@/components/containers/theme-toggle";
 
-export default function ProfilePage() {
+export default function Home() {
   return (
     <div className="bg-background text-foreground min-h-screen">
       <ThemeToggle />
@@ -32,7 +32,7 @@ export default function ProfilePage() {
           <h2 className="mb-6 text-sm font-normal">
             {profileData.experience.title}
           </h2>
-          <div className="grid grid-cols-[140px_1fr] gap-x-8 gap-y-6">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-6 md:grid-cols-[140px_1fr]">
             {profileData.experience.items.map((item, index) => (
               <div key={index} className="contents">
                 <div className="text-muted-foreground text-sm">

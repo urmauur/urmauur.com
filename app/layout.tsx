@@ -14,12 +14,43 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://urmauur.com"),
   title: {
-    template: "%s - Urmauur",
-    default: "Urmauur",
+    template: "%s - Faisal Amir",
+    default: "Faisal Amir — Frontend & UI Engineer",
   },
   description:
-    "I craft production ready UI with tidy details and micro interactions.",
+    "Frontend and UI Engineer from Indonesia. I craft production-ready UIs with tidy details and micro interactions.",
+  keywords: [
+    "Frontend Engineer",
+    "UI Engineer",
+    "React",
+    "Tauri",
+    "Indonesia",
+    "Faisal Amir",
+  ],
+  authors: [{ name: "Faisal Amir" }],
+  creator: "Faisal Amir",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://urmauur.com",
+    title: "Faisal Amir — Frontend & UI Engineer",
+    description:
+      "Frontend and UI Engineer from Indonesia. I craft production-ready UIs with tidy details and micro interactions.",
+    siteName: "Faisal Amir",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Faisal Amir — Frontend & UI Engineer",
+    description:
+      "Frontend and UI Engineer from Indonesia. I craft production-ready UIs with tidy details and micro interactions.",
+    creator: "@urmauur",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
