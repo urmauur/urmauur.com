@@ -17,8 +17,8 @@ const jsonLd = {
   ],
   worksFor: {
     "@type": "Organization",
-    name: "Jan",
-    url: "https://www.jan.ai/",
+    name: "Urmauur",
+    url: "https://urmauur.com/",
   },
 };
 

@@ -2,6 +2,7 @@
   font-family: "PPEditorialNew";
   src: url("../public/fonts/PPEditorialNew-Regular.otf") format("opentype");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,12 +11,14 @@
     format("opentype");
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "PPEditorialNew";
   src: url("../public/fonts/PPEditorialNew-Ultrabold.otf") format("opentype");
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
@@ -24,12 +27,14 @@
     format("opentype");
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "PPEditorialNew";
   src: url("../public/fonts/PPEditorialNew-Ultralight.otf") format("opentype");
   font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
@@ -38,4 +43,5 @@
     format("opentype");
   font-weight: 300;
   font-style: italic;
+  font-display: swap;
 }
