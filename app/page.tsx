@@ -2,9 +2,33 @@ import { ArrowUpRight } from "lucide-react";
 import profileData from "@/data/profile.json";
 import { ThemeToggle } from "@/components/containers/theme-toggle";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Faisal Amir",
+  url: "https://urmauur.com",
+  jobTitle: "Frontend & UI Engineer",
+  description:
+    "Frontend and UI Engineer from Indonesia. I craft production-ready UIs with tidy details and micro interactions.",
+  sameAs: [
+    "https://x.com/urmauur",
+    "https://www.linkedin.com/in/urmauur",
+    "https://github.com/urmauur",
+  ],
+  worksFor: {
+    "@type": "Organization",
+    name: "Jan",
+    url: "https://www.jan.ai/",
+  },
+};
+
 export default function Home() {
   return (
     <div className="bg-background text-foreground min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <ThemeToggle />
       <div className="mx-auto max-w-3xl px-6 py-16 md:px-8 md:py-16">
         {/* Header */}

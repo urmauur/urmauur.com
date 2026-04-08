@@ -1,21 +1,22 @@
 {
   "name": "Urmauur",
   "short_name": "Urmauur",
+  "description": "Frontend and UI Engineer from Indonesia.",
   "icons": [
     {
-      "src": "/web-app-manifest-192x192.png",
-      "sizes": "192x192",
+      "src": "/icon1.png",
+      "sizes": "any",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/web-app-manifest-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "src": "/icon0.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
     }
   ],
-  "theme_color": "#000000",
-  "background_color": "#000000",
-  "display": "standalone"
+  "theme_color": "#09090b",
+  "background_color": "#09090b",
+  "display": "standalone",
+  "start_url": "/"
 }
