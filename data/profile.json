@@ -1,0 +1,59 @@
+{
+  "header": {
+    "name": "Faisal Amir",
+    "role": "Frontend, UI Engineer from Indonesia 🇮🇩"
+  },
+  "about": {
+    "title": "About",
+    "description": "I make buttons for a living, and sometimes entire applications. Most of my job is making things look simple and intuitive, while quietly fighting CSS and pixel alignment behind the scenes.I enjoy clean UI, smooth interactions, and pretending everything works perfectly on the first try."
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "period": "2023 — Now",
+        "title": "Frontend, UI engineer at Jan",
+        "url": "https://www.jan.ai/",
+        "description": "Developing cross-platform AI applications using React and Tauri, delivering high-performance experiences across Linux, Windows, and macOS. Owning and maintaining websites and documentation platforms under Menlo Research, ensuring a consistent, scalable, and user-friendly experience."
+      },
+      {
+        "period": "2018 — 2023",
+        "title": "Frontend, UI engineer at Danacita",
+        "url": "https://www.danacita.co.id/",
+        "description": "Built and delivered modern, responsive user interfaces using React, HTML, and CSS. Developed modular and reusable components, ensuring scalability and maintainability, while producing pixel-perfect UI aligned with design specifications."
+      },
+      {
+        "period": "2016 — 2028",
+        "title": "Sr. UI engineer at Mekari",
+        "url": "https://mekari.com/",
+        "description": "Translated design concepts into production-ready interfaces using HTML, SCSS, and JavaScript. Optimized front-end workflows using Gulp, improving development efficiency and consistency across projects."
+      },
+      {
+        "period": "2014 — 2016",
+        "title": "UI Engineer & Jr. Frontend Engineer at Sribu",
+        "url": "https://www.sribu.com/",
+        "description": "Designed and implemented user interfaces using HTML, CSS, and LESS. Collaborated with designers and developers to deliver clean, responsive, and user-friendly web experiences."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "items": [
+      {
+        "label": "Twitter",
+        "text": "@urmauur",
+        "url": "https://x.com/urmauur"
+      },
+      {
+        "label": "LinkedIn",
+        "text": "@urmauur",
+        "url": "https://www.linkedin.com/in/urmauur"
+      },
+      {
+        "label": "GitHub",
+        "text": "@urmauur",
+        "url": "https://github.com/urmauur"
+      }
+    ]
+  }
+}

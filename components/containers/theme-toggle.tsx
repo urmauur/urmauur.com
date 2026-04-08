@@ -25,7 +25,7 @@ export function ThemeToggle() {
         onCheckedChange={handleToggle}
         haptic="double"
         checkedIcon={<Moon className="size-4 fill-white/80 stroke-white/80" />}
-        uncheckedIcon={<Sun className="size-4 stroke-white/80" />}
+        uncheckedIcon={<Sun className="size-4 fill-white/80 stroke-white/80" />}
         className="peer-checked:border-blue-500 peer-checked:bg-blue-500"
       />
     </div>

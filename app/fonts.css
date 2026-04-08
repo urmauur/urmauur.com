@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "PPEditorialNew";
+  src: url("../public/fonts/PPEditorialNew-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PPEditorialNew";
+  src: url("../public/fonts/PPEditorialNew-RegularItalic.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PPEditorialNew";
+  src: url("../public/fonts/PPEditorialNew-Ultrabold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PPEditorialNew";
+  src: url("../public/fonts/PPEditorialNew-UltraboldItalic.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PPEditorialNew";
+  src: url("../public/fonts/PPEditorialNew-Ultralight.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "PPEditorialNew";
+  src: url("../public/fonts/PPEditorialNew-UltralightItalic.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
