@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import { ArrowUpRight } from "lucide-react";
 import profileData from "@/data/profile.json";
 import { ThemeToggle } from "@/components/containers/theme-toggle";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://urmauur.com",
+  },
+};
 
 const jsonLd = {
   "@context": "https://schema.org",
