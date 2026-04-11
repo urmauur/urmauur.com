@@ -70,11 +70,13 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
-        <Script
-          defer
-          src="https://cloud.umami.is/script.js"
-          data-website-id="54bacee6-2e6a-4acb-b797-548942d8902c"
-        />
+        {process.env.NODE_ENV === "production" && (
+          <Script
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id="54bacee6-2e6a-4acb-b797-548942d8902c"
+          />
+        )}
       </body>
     </html>
   );
