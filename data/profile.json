@@ -11,7 +11,13 @@
     "title": "Experience",
     "items": [
       {
-        "period": "2023 — Now",
+        "period": "2026 — Now",
+        "title": "Self-employed",
+        "url": "https://urmauur.com",
+        "description": "Working independently on UI components, interfaces, and frontend projects. Building and shipping production-ready components with a focus on clean design and micro-interactions."
+      },
+      {
+        "period": "2023 — 2026",
         "title": "Frontend, UI engineer at Jan",
         "url": "https://www.jan.ai/",
         "description": "Developing cross-platform AI applications using React and Tauri, delivering high-performance experiences across Linux, Windows, and macOS. Owning and maintaining websites and documentation platforms under Menlo Research, ensuring a consistent, scalable, and user-friendly experience."

@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import profileData from "@/data/profile.json";
 import { ThemeToggle } from "@/components/containers/theme-toggle";
+import { ExperienceList } from "@/components/containers/experience-list";
 
 export const metadata: Metadata = {
   alternates: {
@@ -58,34 +60,41 @@ export default function Home() {
           </p>
         </section>
 
+        {/* Interfaces Section */}
+        <section className="mb-10">
+          <h2 className="mb-1 text-sm font-normal">Interfaces</h2>
+          <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
+            UI components and micro-interactions, free to use and install.
+          </p>
+          <div className="grid grid-cols-2 gap-3">
+            <a
+              href="/interfaces/file-card-collections"
+              className="group block transition-opacity hover:opacity-80"
+            >
+              <Image
+                src="/images/file-card/file-card-thumb.png"
+                alt="File Card Collections preview"
+                width={800}
+                height={450}
+                className="w-full rounded-lg border"
+              />
+              <p className="mt-4 text-sm">File Card Collections</p>
+              <p className="text-muted-foreground mt-0.5 line-clamp-2 text-xs leading-relaxed">
+                A collection of file preview cards for common file types (PDF,
+                DOC, images, MD, PPT, video, archives, and more). Ideal for
+                dashboards, file managers, and upload UIs with consistent visual
+                language.
+              </p>
+            </a>
+          </div>
+        </section>
+
         {/* Experience Section */}
         <section className="mb-10">
           <h2 className="mb-6 text-sm font-normal">
             {profileData.experience.title}
           </h2>
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 md:grid-cols-[140px_1fr]">
-            {profileData.experience.items.map((item, index) => (
-              <div key={index} className="contents">
-                <div className="text-muted-foreground text-sm">
-                  {item.period}
-                </div>
-                <div>
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mb-2 inline-flex items-center gap-1 text-sm font-normal underline-offset-4 transition-all hover:underline"
-                  >
-                    {item.title}
-                    <ArrowUpRight className="h-3 w-3" />
-                  </a>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <ExperienceList items={profileData.experience.items} />
         </section>
 
         {/* Contact Section */}

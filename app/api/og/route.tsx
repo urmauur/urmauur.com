@@ -1,12 +1,18 @@
 import { ImageResponse } from "next/og";
 import { readFileSync } from "fs";
 import { join } from "path";
+import { NextRequest } from "next/server";
 
-export const alt = "Faisal Amir — Frontend & UI Engineer from Indonesia";
-export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
+export const runtime = "nodejs";
 
-export default async function Image() {
+const size = { width: 1200, height: 630 };
+
+export async function GET(req: NextRequest) {
+  const { searchParams } = req.nextUrl;
+  const title = searchParams.get("title") ?? "Faisal Amir";
+  const description =
+    searchParams.get("description") ?? "Frontend & UI Engineer from Indonesia";
+
   const iconData = readFileSync(join(process.cwd(), "app/icon1.png"));
   const base64 = `data:image/png;base64,${iconData.toString("base64")}`;
 
@@ -23,7 +29,7 @@ export default async function Image() {
         gap: 32,
       }}
     >
-      <img src={base64} width={80} height={80} alt="" />
+      <img src={base64} width={80} height={80} />
       <div
         style={{
           display: "flex",
@@ -71,7 +77,7 @@ export default async function Image() {
             lineHeight: 1.1,
           }}
         >
-          Faisal Amir
+          {title}
         </h1>
         <p
           style={{
@@ -79,9 +85,11 @@ export default async function Image() {
             fontSize: 28,
             margin: 0,
             fontFamily: "sans-serif",
+            textAlign: "center",
+            maxWidth: 900,
           }}
         >
-          Frontend & UI Engineer from Indonesia
+          {description}
         </p>
       </div>
       <p
