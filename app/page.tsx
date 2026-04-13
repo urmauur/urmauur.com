@@ -66,7 +66,7 @@ export default function Home() {
           <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
             UI components and micro-interactions, free to use and install.
           </p>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <a
               href="/interfaces/file-card-collections"
               className="group block transition-opacity hover:opacity-80"
@@ -77,6 +77,7 @@ export default function Home() {
                 width={800}
                 height={450}
                 className="w-full rounded-lg border"
+                loading="eager"
               />
               <p className="mt-4 text-sm">File Card Collections</p>
               <p className="text-muted-foreground mt-0.5 line-clamp-2 text-xs leading-relaxed">
