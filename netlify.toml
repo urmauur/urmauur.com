@@ -2,14 +2,6 @@
   command = "npm run build"
   publish = ".next"
 
-# Redirect www to non-www
-[[redirects]]
-  from = "https://www.urmauur.com/*"
-  to = "https://urmauur.com/:splat"
-  status = 301
-  force = true
-
-# Prevent Netlify deploy previews from being indexed
 [[headers]]
   for = "/*"
   [headers.values]
