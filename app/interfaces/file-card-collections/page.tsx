@@ -79,9 +79,31 @@ const fileFormats = [
   "video",
 ] as const;
 
+const videoJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "File Card Collections — UI Component Demo",
+  description:
+    "A collection of file preview cards for 26 common file types. Built with shadcn/ui and Tailwind CSS. Installable via the shadcn CLI.",
+  thumbnailUrl:
+    "https://urmauur.com/api/og?title=File%20Card%20Collections&description=26%20file%20types%2C%20installable%20via%20shadcn%20CLI",
+  uploadDate: "2026-04-12T00:00:00+00:00",
+  contentUrl: "https://urmauur.com/images/file-card/file-card-video.mp4",
+  embedUrl: "https://urmauur.com/interfaces/file-card-collections",
+  publisher: {
+    "@type": "Person",
+    name: "Faisal Amir",
+    url: "https://urmauur.com",
+  },
+};
+
 export default function FileCardCollectionsPage() {
   return (
     <div className="bg-background text-foreground flex min-h-screen py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }}
+      />
       <ThemeToggle />
       <div className="mx-auto w-full max-w-3xl px-6 md:px-8">
         {/* Header */}

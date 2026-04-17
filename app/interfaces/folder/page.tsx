@@ -61,9 +61,31 @@ const folders = [
   { color: "grey", label: "Trash", size: "md" },
 ] as const;
 
+const videoJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "Folder Collections — UI Component Demo",
+  description:
+    "Animated folder icon with frosted glass flap, stacked document peek, and spring hover animation. 6 color themes. Built with React and Tailwind CSS.",
+  thumbnailUrl:
+    "https://urmauur.com/api/og?title=Folder%20Collections&description=Animated%20folder%20icon%2C%20hover%20animation%2C%20noise%20texture",
+  uploadDate: "2026-04-17T00:00:00+00:00",
+  contentUrl: "https://urmauur.com/images/folder/folder-video.mp4",
+  embedUrl: "https://urmauur.com/interfaces/folder",
+  publisher: {
+    "@type": "Person",
+    name: "Faisal Amir",
+    url: "https://urmauur.com",
+  },
+};
+
 export default function FolderPage() {
   return (
     <div className="bg-background text-foreground flex min-h-screen py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }}
+      />
       <ThemeToggle />
       <div className="mx-auto w-full max-w-3xl px-6 md:px-8">
         {/* Header */}
