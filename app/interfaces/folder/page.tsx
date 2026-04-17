@@ -97,7 +97,7 @@ export default function FolderPage() {
             <ChevronLeft className="h-3 w-3" />
             Back
           </Link>
-          <h1 className="mb-1 text-xl font-normal">Folder Collections</h1>
+          <h1 className="mb-1 text-xl font-normal">Folder Components</h1>
           <p className="text-muted-foreground mb-3 text-xs">17 April 2026</p>
           <p className="text-muted-foreground text-sm leading-relaxed">
             A folder icon component with a frosted glass front flap, stacked
