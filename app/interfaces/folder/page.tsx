@@ -8,7 +8,7 @@ import { InstallCommand } from "@/components/containers/install-command";
 import { PageFooter } from "@/components/containers/page-footer";
 
 export const metadata: Metadata = {
-  title: "Folder Collections",
+  title: "Folder Components",
   description:
     "An animated folder icon component with noise texture, document peek animation on hover, and full color customization. Built with React and Tailwind CSS. Installable via the shadcn CLI.",
   keywords: [
@@ -27,27 +27,27 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://urmauur.com/interfaces/folder",
-    title: "Folder Collections — Interfaces by Faisal Amir",
+    title: "Folder Components — Interfaces by Faisal Amir",
     description:
       "Animated folder icon with noise texture and hover document animation. Fully color-customizable. Installable via shadcn CLI.",
     siteName: "Faisal Amir",
     images: [
       {
-        url: `https://urmauur.com/api/og?title=${encodeURIComponent("Folder Collections")}&description=${encodeURIComponent("Animated folder icon, hover animation, noise texture")}`,
+        url: `https://urmauur.com/api/og?title=${encodeURIComponent("Folder Components")}&description=${encodeURIComponent("Animated folder icon, hover animation, noise texture")}`,
         width: 1200,
         height: 630,
-        alt: "Folder Collections — Interfaces by Faisal Amir",
+        alt: "Folder Components — Interfaces by Faisal Amir",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Folder Collections — Interfaces by Faisal Amir",
+    title: "Folder Components — Interfaces by Faisal Amir",
     description:
       "Animated folder icon with noise texture and hover document animation. Installable via shadcn CLI.",
     creator: "@urmauur",
     images: [
-      `https://urmauur.com/api/og?title=${encodeURIComponent("Folder Collections")}&description=${encodeURIComponent("Animated folder icon, hover animation, noise texture")}`,
+      `https://urmauur.com/api/og?title=${encodeURIComponent("Folder Components")}&description=${encodeURIComponent("Animated folder icon, hover animation, noise texture")}`,
     ],
   },
 };
