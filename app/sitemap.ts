@@ -4,6 +4,12 @@ import { join } from "path";
 
 const BASE_URL = "https://urmauur.com";
 
+const routeDates: Record<string, string> = {
+  "/": "2026-04-12",
+  "/interfaces/folder": "2026-04-17",
+  "/interfaces/file-card-collections": "2026-04-12",
+};
+
 function getRoutes(dir: string, base = ""): string[] {
   const routes: string[] = [];
 
@@ -11,7 +17,6 @@ function getRoutes(dir: string, base = ""): string[] {
     const fullPath = join(dir, entry);
     const isDir = statSync(fullPath).isDirectory();
 
-    // Skip Next.js internals, API routes, and private folders
     if (entry.startsWith("_") || entry.startsWith("(") || entry === "api") {
       continue;
     }
@@ -32,8 +37,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return routes.map((route) => ({
     url: `${BASE_URL}${route === "/" ? "" : route}`,
-    lastModified: new Date(),
-    changeFrequency: route === "/" ? "monthly" : "monthly",
+    lastModified: new Date(routeDates[route] ?? new Date()),
+    changeFrequency: "monthly",
     priority: route === "/" ? 1 : 0.8,
   }));
 }

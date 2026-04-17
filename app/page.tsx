@@ -4,6 +4,8 @@ import { ArrowUpRight } from "lucide-react";
 import profileData from "@/data/profile.json";
 import { ThemeToggle } from "@/components/containers/theme-toggle";
 import { ExperienceList } from "@/components/containers/experience-list";
+import FileCard from "@/components/publish/file-card";
+import Folder from "@/components/publish/folder";
 
 export const metadata: Metadata = {
   alternates: {
@@ -41,44 +43,73 @@ export default function Home() {
       <ThemeToggle />
       <div className="mx-auto max-w-3xl px-6 md:px-8">
         {/* Header */}
-        <header className="mb-8">
-          <h1 className="mb-1 text-xl font-normal">
-            {profileData.header.name}
-          </h1>
-          <p className="text-muted-foreground mb-1 text-sm leading-relaxed">
-            {profileData.header.role}
-          </p>
+        <header className="mb-3 flex items-center gap-4">
+          <Image
+            src="/images/misc/avatar.png"
+            alt="Avatar"
+            width={56}
+            height={56}
+            className="rounded-full border p-0.5"
+            priority
+          />
+          <div>
+            <h1 className="mb-1 text-xl font-normal">
+              {profileData.header.name}
+            </h1>
+            <p className="text-muted-foreground mb-1 text-sm leading-relaxed">
+              {profileData.header.role}
+            </p>
+          </div>
         </header>
 
         {/* About Section */}
         <section className="mb-10">
-          <h2 className="mb-4 text-sm font-normal">
-            {profileData.about.title}
-          </h2>
           <p className="text-muted-foreground text-sm leading-relaxed">
             {profileData.about.description}
           </p>
         </section>
 
         {/* Interfaces Section */}
-        <section className="mb-10">
+        <section className="mb-20">
           <h2 className="mb-1 text-sm font-normal">Interfaces</h2>
           <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
             UI components and micro-interactions, free to use and install.
           </p>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <a
+              href="/interfaces/folder"
+              className="group block transition-opacity hover:opacity-80"
+            >
+              <div className="flex h-80 items-center justify-center rounded-3xl border">
+                <Folder color="blue" size="md" label="Components" />
+              </div>
+              <p className="mt-4 text-sm">Folder Components</p>
+              <p className="text-muted-foreground mt-0.5 line-clamp-2 text-xs leading-relaxed">
+                Folder components with default, open, glass, and document
+                variants across 6 color themes. Great for file managers,
+                dashboards, and productivity UIs.
+              </p>
+              <p className="text-muted-foreground mt-2 text-xs">
+                17 April 2026
+              </p>
+            </a>
+
             <a
               href="/interfaces/file-card-collections"
               className="group block transition-opacity hover:opacity-80"
             >
-              <Image
-                src="/images/file-card/file-card-thumb.png"
-                alt="File Card Collections preview"
-                width={800}
-                height={450}
-                className="w-full rounded-lg border"
-                loading="eager"
-              />
+              <div className="flex h-80 items-center justify-center rounded-3xl border">
+                <div className="space-y-4">
+                  <div className="flex gap-6">
+                    <FileCard formatFile="mdx" />
+                    <FileCard formatFile="css" />
+                  </div>
+                  <div className="flex gap-6">
+                    <FileCard formatFile="img" />
+                    <FileCard formatFile="ppt" />
+                  </div>
+                </div>
+              </div>
               <p className="mt-4 text-sm">File Card Collections</p>
               <p className="text-muted-foreground mt-0.5 line-clamp-2 text-xs leading-relaxed">
                 A collection of file preview cards for common file types (PDF,
@@ -86,12 +117,15 @@ export default function Home() {
                 dashboards, file managers, and upload UIs with consistent visual
                 language.
               </p>
+              <p className="text-muted-foreground mt-2 text-xs">
+                12 April 2026
+              </p>
             </a>
           </div>
         </section>
 
         {/* Experience Section */}
-        <section className="mb-10">
+        <section className="my-10">
           <h2 className="mb-6 text-sm font-normal">
             {profileData.experience.title}
           </h2>
